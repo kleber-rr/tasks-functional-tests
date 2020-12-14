@@ -16,7 +16,7 @@ public class TasksTest {
 //        WebDriver driver = new ChromeDriver();
         WebDriver driver = new RemoteWebDriver(DesiredCapabilities.chrome());
         //acessar a aplicacao
-        driver.navigate().to("http://localhost:8001/tasks");
+        driver.navigate().to("http://127.0.0.1:8001/tasks");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
     }
